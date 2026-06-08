@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPower Gym - Türkiye'nin En İyi Spor Salonu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>FitPower Gym</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Anasayfa</a></li>
+                <li><a href="programs.html">Programlar</a></li>
+                <li><a href="trainers.html">Antrenörler</a></li>
+                <li><a href="membership.html">Üyelik</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li><a href="#" id="favBtn" class="fav-btn">❤️ (<span id="favCount">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Sağlıklı Bir Yaşam Başla</h2>
+            <p>Profesyonel antrenörler ve modern ekipmanlarla hedefine ulaş</p>
+            <button class="btn btn-primary"
+                onclick="document.querySelector('.membership-section').scrollIntoView({behavior: 'smooth'})">Üye
+                Ol</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Neden Biz?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏋️</div>
+                    <h3>Modern Ekipmanlar</h3>
+                    <p>En yeni teknoloji ile donatılmış spor salonumuz</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Uzman Antrenörler</h3>
+                    <p>Sertifikalı ve deneyimli eğitmen kadromuz</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Başarı Takibi</h3>
+                    <p>Düzenli ölçümler ve ilerleme raporları</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Grup Dersler</h3>
+                    <p>Yoga, pilates, zumba ve daha fazlası</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership-section" id="membershipSection">
+        <div class="container">
+            <h2>Üyelik Paketleri</h2>
+            <div class="membership-cards">
+                <div class="membership-card">
+                    <h3>Başlangıç</h3>
+                    <p class="price">₺399<span>/ay</span></p>
+                    <ul>
+                        <li>✓ Salonun tüm alanlarına erişim</li>
+                        <li>✓ Grup dersleri</li>
+                        <li>✗ Kişisel antrenör</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="addToCart('Başlangıç', 399)">Seç</button>
+                </div>
+                <div class="membership-card featured">
+                    <h3>Premium</h3>
+                    <p class="price">₺599<span>/ay</span></p>
+                    <ul>
+                        <li>✓ Salonun tüm alanlarına erişim</li>
+                        <li>✓ Grup dersleri</li>
+                        <li>✓ 2x Kişisel antrenör</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="addToCart('Premium', 599)">Seç</button>
+                </div>
+                <div class="membership-card">
+                    <h3>Unlimited</h3>
+                    <p class="price">₺799<span>/ay</span></p>
+                    <ul>
+                        <li>✓ Salonun tüm alanlarına erişim</li>
+                        <li>✓ Grup dersleri</li>
+                        <li>✓ Unlimited Kişisel antrenör</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="addToCart('Unlimited', 799)">Seç</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 cankoroot-sc. Tüm hakları saklıdır.</p>
+            <p>Adana, Türkiye | Tel: 0212 123 45 67</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<!-- cankoroot tarafından yapıldı -->

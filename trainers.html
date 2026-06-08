@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrenörler - FitPower Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>💪 FitPower Gym</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="programs.html">Programlar</a></li>
+                <li><a href="trainers.html" class="active">Antrenörler</a></li>
+                <li><a href="membership.html">Üyelik</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li><a href="#" id="favBtn" class="fav-btn">❤️ (<span id="favCount">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Profesyonel Antrenörler</h1>
+            <p>Alanında uzman eğitmen kadromuz</p>
+        </div>
+    </section>
+
+    <section class="trainers-section">
+        <div class="container">
+            <div class="trainers-grid" id="trainersGrid">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 cankoroot-sc. Tüm hakları saklıdır.</p>
+            <p>Adana, Türkiye | Tel: 0212 123 45 67</p>
+        </div>
+    </footer>
+
+    <div id="trainerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTrainerModal()">&times;</span>
+            <div id="trainerModalBody">
+            </div>
+            <form id="appointmentForm" onsubmit="bookAppointment(event)">
+                <h3>Randevu Talebi</h3>
+                <input type="text" id="appointmentName" placeholder="Adınız" required>
+                <input type="email" id="appointmentEmail" placeholder="Email" required>
+                <input type="date" id="appointmentDate" required>
+                <button type="submit" class="btn btn-primary">Randevu Talep Et</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/trainers.js"></script>
+</body>
+
+</html>
+<!-- cankoroot tarafından yapıldı -->
+</body>
+
+</html>

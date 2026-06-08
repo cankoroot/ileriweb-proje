@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - FitPower Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>FitPower Gym</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="programs.html">Programlar</a></li>
+                <li><a href="trainers.html">Antrenörler</a></li>
+                <li><a href="membership.html">Üyelik</a></li>
+                <li><a href="contact.html" class="active">İletişim</a></li>
+                <li><a href="#" id="favBtn" class="fav-btn">❤️ (<span id="favCount">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <!DOCTYPE html>
+    <html lang="tr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>İletişim - FitPower Gym</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>FitPower Gym</h1>
+                </div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="programs.html">Programlar</a></li>
+                    <li><a href="trainers.html">Antrenörler</a></li>
+                    <li><a href="membership.html">Üyelik</a></li>
+                    <li><a href="contact.html" class="active">İletişim</a></li>
+                    <li><a href="#" id="favBtn" class="fav-btn">❤️ (<span id="favCount">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="page-header">
+            <div class="container">
+                <h1>İletişim</h1>
+                <p>Bize her zaman ulaşabilirsiniz</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>📍 Adres</h3>
+                        <p>Bahçelievler, İstanbul</p>
+                        <p>Ataköy Caddesi No: 123</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Telefon</h3>
+                        <p>0212 123 45 67</p>
+                        <p>0542 987 65 43</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>✉️ Email</h3>
+                        <p>info@fitpowergym.com</p>
+                        <p>support@fitpowergym.com</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🕐 Çalışma Saatleri</h3>
+                        <p>Pzt - Cum: 06:00 - 23:00</p>
+                        <p>Cmt - Paz: 08:00 - 22:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Mesaj Gönder</h2>
+                    <form id="contactForm" onsubmit="submitContact(event)">
+                        <div class="form-group">
+                            <label for="contactName">Adınız *</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                            <span class="error-message" id="contactNameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                            <span class="error-message" id="contactEmailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Mesajınız *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" required></textarea>
+                            <span class="error-message" id="contactMessageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                    <div id="contactSuccessMessage" class="success-message" style="display: none;">
+                        <p>✓ Mesajınız başarıyla gönderildi. Yakında sizinle iletişime geçeceğiz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Bizi Bulun</h2>
+                <div class="map-placeholder">
+                    <p>🗺️ Harita integrasyon bölümü</p>
+                    <p>Çukurova, Adana</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 cankoroot-sc. Tüm hakları saklıdır.</p>
+                <p>Adana, Türkiye | Tel: 0212 123 45 67</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+
+    </html>
+    <!-- cankoroot tarafından yapıldı -->

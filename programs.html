@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+< lang="tr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programlar - FitPower Gym</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>💪 FitPower Gym</h1>
+                </div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="programs.html" class="active">Programlar</a></li>
+                    <li><a href="trainers.html">Antrenörler</a></li>
+                    <li><a href="membership.html">Üyelik</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="#" id="favBtn" class="fav-btn">❤️ (<span id="favCount">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="page-header">
+            <div class="container">
+                <h1>Antrenman Programları</h1>
+                <p>Hedefine uygun programı seç</p>
+            </div>
+        </section>
+
+        <section class="programs-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterPrograms('all')">Tümü</button>
+                    <button class="filter-btn" onclick="filterPrograms('cardio')">Kardiyo</button>
+                    <button class="filter-btn" onclick="filterPrograms('strength')">Kuvvet</button>
+                    <button class="filter-btn" onclick="filterPrograms('flexibility')">Esneklik</button>
+                </div>
+
+                <div class="programs-grid" id="programsGrid">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; cankoroot-sc. Tüm hakları saklıdır.</p>
+                <p>Adana, Türkiye | Tel: 0212 123 45 67</p>
+            </div>
+        </footer>
+
+        <div id="programModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modalBody">
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+        <script src="js/programs.js"></script>
+    </body>
+
+
+    <!-- cankoroot tarafından yapıldı -->
+
+    </html>
